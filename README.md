@@ -38,7 +38,7 @@ The framework benchmarks **five core CF-mitigation algorithms** under a unified 
 - **Dataset:** Beijing Multi-Site Air Quality (12 stations = 12 clients)  
 - **Input Features:** meteorological + pollutant variables + cyclical time encodings  
 - **Target Variables:** `PM2.5`, `TEMP`, or `WSPM` (modifiable in notebook)  
-- **Temporal Tasks:** sequential 3-month windows (2014–2017), forming 9 continual tasks  
+- **Temporal Tasks:** sequential 3-month windows (2014–2017), forming 11 continual tasks  
 - **Prediction:** multi-step forecasting (past 12 → next 6 hours)  
 - **Normalization:** robust [1st, 99th] percentile scaling across all clients  
 
@@ -49,7 +49,6 @@ The framework benchmarks **five core CF-mitigation algorithms** under a unified 
 - **Model:** Bi-layer LSTM with fully-connected output head  
 - **FL Aggregation:** FedAvg (equal client weights)  
 - **Evaluation Metrics:**
-  - RMSE and MAE matrices (`P[i,j]` = RMSE on Task *j* after Task *i*)  
   - Average Performance (AP)  
   - Average Forgetting (AF)  
   - Average Plasticity  
