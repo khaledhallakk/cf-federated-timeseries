@@ -3,6 +3,9 @@
 This repository provides a **reproducible benchmark framework** for evaluating *catastrophic forgetting mitigation methods* in **federated time-series forecasting**.  
 All experiments are performed using the **Beijing Multi-Site Air Quality Dataset**, where each monitoring station acts as an independent **federated client**.
 
+📄 If you use this work in your research, please cite:
+Hallak, K., Kem, O., Benchmarking Catastrophic Forgetting Mitigation Methods in Federated Time Series Forecasting, DOI: 10.48550/arXiv.2510.21491
+
 ---
 
 ## 📘 Overview
